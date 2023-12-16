@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <div className={style.container}>
-      <h1 style={{ color: "white" }}>Todo App</h1>
+      <h1 style={{ color: "red" }}>Todo App</h1>
       <NewTodo onAddTodo={handleNewTodo} />
       <Todos todos={todos} onDeleteTodo={handleDeleteTodo} />
     </div>
