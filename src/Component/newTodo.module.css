@@ -1,0 +1,59 @@
+.form {
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.formField {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.formField label {
+    flex-basis: 20%;
+}
+
+.formField input {
+    flex-basis: 80%;
+    border: none;
+    border-radius: .6rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.formField textarea {
+    flex-basis: 80%;
+    border: none;
+    resize: none;
+    border-radius: .6rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.form button {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow for depth */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.form button:hover {
+    background-color: orange;
+    /* Slightly darker color on hover */
+    color: #ecf0f1;
+    /* Lighter text color on hover */
+    transform: scale(1.05);
+    /* Slight scale increase on hover for depth */
+}
