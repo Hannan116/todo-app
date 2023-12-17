@@ -1,3 +1,4 @@
+/* newTodo.module.css */
 .form {
     width: 50%;
     background-color: #333;
@@ -5,37 +6,69 @@
     padding: 0.5rem;
     border-radius: 0.8rem;
     margin-bottom: 0.5rem;
+    position: relative;
 }
 
 .formField {
     margin: 1rem 0;
     display: flex;
+    align-items: center;
 }
 
 .formField label {
     flex-basis: 20%;
+    padding-right: 1rem;
 }
 
-.formField input {
-    flex-basis: 80%;
-    border: none;
-    border-radius: .6rem;
-    padding: .5rem;
-    font-size: 1rem;
-}
-
+.formField input,
 .formField textarea {
     flex-basis: 80%;
     border: none;
-    resize: none;
-    border-radius: .6rem;
-    padding: .5rem;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
     font-size: 1rem;
+    z-index: 1;
+    resize: none;
 }
 
+/* Set a higher z-index for the date picker */
+.react-datepicker-wrapper {
+    z-index: 2;
+}
+
+/* Specify the style for the date picker dropdown */
+.react-datepicker-popper {
+    width: 100% !important;
+    box-shadow: none !important;
+}
+
+/* Specify the style for the date picker calendar container */
+.react-datepicker__triangle {
+    display: none !important;
+}
+
+/* Specify the style for the date picker header */
+.react-datepicker__header {
+    background-color: #333 !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Specify the style for the date picker day */
+.react-datepicker__day {
+    color: white !important;
+}
+
+/* Specify the style for the date picker selected day */
+.react-datepicker__day--selected {
+    background-color: #3498db !important;
+    color: white !important;
+}
+
+/* Specify the style for the form button */
 .form button {
     display: block;
-    margin: 0 auto;
+    margin: 0.3rem auto;
     padding: 8px 16px;
     background-color: #3498db;
     color: #ffffff;
@@ -43,17 +76,14 @@
     border-radius: 10px;
     font-family: 'Arial', sans-serif;
     cursor: pointer;
-    width: 50%;
+    width: 80%;
+    z-index: 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Subtle box shadow for depth */
     transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
 }
 
 .form button:hover {
     background-color: orange;
-    /* Slightly darker color on hover */
     color: #ecf0f1;
-    /* Lighter text color on hover */
     transform: scale(1.05);
-    /* Slight scale increase on hover for depth */
 }

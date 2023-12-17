@@ -3,17 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: .5rem;
-    padding: .5rem;
-    border-radius: .8rem;
-}
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    transition: background-color 0.3s ease;
+    /* Smooth hover transition */
 
-.todo:hover {
-    background-color: #111;
-}
+    /* Adjust the hover background color */
+    &:hover {
+        background-color: #111;
+    }
 
-.todo p {
-    opacity: 0.6;
+    p {
+        opacity: 0.6;
+    }
 }
 
 .btn {
