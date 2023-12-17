@@ -19,9 +19,42 @@
     }
 }
 
+.firstDiv {
+    flex-basis: 95%;
+}
+
+.firstDiv h3 {
+    text-transform: capitalize;
+    text-align: center;
+    background-color: teal;
+    border-radius: .6rem;
+    padding: .2rem;
+    font-size: 1.5rem;
+}
+
+.firstDiv p {
+    text-align: justify;
+    margin-right: 5px;
+    padding: .2rem;
+
+}
+
+.secondDiv {
+    flex-basis: 5%;
+}
+
 .btn {
     border: none;
     background-color: transparent;
     color: red;
     cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: all 0.3ms;
+}
+
+.btn:hover {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transform: scale(1.1);
 }

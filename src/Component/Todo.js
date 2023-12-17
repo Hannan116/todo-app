@@ -18,12 +18,18 @@ const Todo = (props) => {
 
   return (
     <article className={style.todo}>
-      <div>
+      <div className={style.firstDiv}>
         {title && <h3>{title}</h3>}
         {desc && <p>{desc}</p>}
-        {date && <p style={{color:"yellow"}}>Date: {new Date(date).toDateString()}</p>}
+        {date && (
+          <p
+            style={{ color: "yellow", textAlign: "center", fontSize: "1.5rem" }}
+          >
+            Date: {new Date(date).toDateString()}
+          </p>
+        )}
       </div>
-      <div>
+      <div className={style.secondDiv}>
         <button className={style.btn} onClick={handleDelete}>
           <FaTrashCan />
         </button>
