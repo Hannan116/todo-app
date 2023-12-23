@@ -1,11 +1,24 @@
 .todos {
-    background-color: #333;
-    width: 50%;
-    height: 60vh;
-    color: white;
-    padding: 1rem;
-    border-radius: 0.8rem;
-    overflow: scroll;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+  background-color: #333;
+  width: 90%;
+
+  color: white;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  /* overflow: scroll; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width:1200px) {
+.todos {
+  grid-template-columns:repeat(2, 1fr);
+} 
+}
+@media screen and (max-width:576px) {
+  .todos {
+    grid-template-columns:repeat(1, 1fr);
+  } 
   }
-  

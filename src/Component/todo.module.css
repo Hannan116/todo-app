@@ -2,11 +2,12 @@
     background-color: #222;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin: 0.5rem 0;
     padding: 1rem;
     border-radius: 0.8rem;
     transition: background-color 0.3s ease;
+
     /* Smooth hover transition */
 
     /* Adjust the hover background color */
@@ -16,11 +17,13 @@
 
     p {
         opacity: 0.6;
+
     }
 }
 
 .firstDiv {
     flex-basis: 95%;
+
 }
 
 .firstDiv h3 {
@@ -30,6 +33,7 @@
     border-radius: .6rem;
     padding: .2rem;
     font-size: 1.5rem;
+
 }
 
 .firstDiv p {

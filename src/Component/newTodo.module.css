@@ -1,16 +1,17 @@
 /* newTodo.module.css */
 .form {
-    width: 50%;
+    width: 30%;
     background-color: #333;
     color: white;
     padding: 0.5rem;
     border-radius: 0.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     position: relative;
+    height: 26vh;
 }
 
 .formField {
-    margin: 1rem 0;
+    margin: .5rem 0;
     display: flex;
     align-items: center;
 }
